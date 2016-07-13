@@ -15,8 +15,7 @@ var app = express();
 /**
  * Database configuration
  */
-mongoose.connect(process.env.DB_CONNECTION);
-// mongoose.connect("mongodb://localhost/local");
+mongoose.connect(process.env.DB_CONNECTION);s
 
 /**
  * Express configuration
