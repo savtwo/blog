@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+
+      <!-- Verify e-mail form -->
+      <form class="well" ng-submit="vc.resend()">
+        <div ng-if="vc.alert.message" ng-class="vc.alert.type">{{vc.alert.message}}</div>
+        <div class="form-group">
+          <label>E-mail</label>
+          <input type="email" name="email" class="form-control" ng-model="vc.email">
+        </div>
+        
+        <button class="btn btn-warning btn-lg">Resend e-mail</button>
+      </form>
+      
+    </div>
+  </div>
+</div>

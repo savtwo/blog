@@ -1,0 +1,33 @@
+{
+  "globals": {
+    "expect": false,
+    "proxyquire": false,
+    "require": false,
+    "sandbox": false,
+    "sinon": false
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "comma-dangle": [2, "never"],
+    "comma-spacing": [2, { "before": false, "after": true }],
+    "comma-style": [2, "last"],
+    "eol-last": 2,
+    "no-console": 1,
+    "no-multi-spaces": 2,
+    "no-multiple-empty-lines": [2, { "max": 1, "maxEOF": 1 }],
+    "no-spaced-func": 2,
+    "no-trailing-spaces": [2, { "skipBlankLines": true }],
+    "no-unused-vars": 1,
+    "quotes": [2, "double"],
+    "space-before-blocks": 2,
+    "space-before-function-paren": [2, "never"],
+    "space-infix-ops": 2,
+    "space-unary-ops": 2,
+    "semi": [2, "always"]
+  }
+}

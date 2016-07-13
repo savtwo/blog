@@ -1,0 +1,84 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+
+      <!-- Angular UI Bootstrap tabs -->
+      <uib-tabset type="pills" justified="true">
+
+        <!-- Login tab and content -->
+        <uib-tab>
+          <uib-tab-heading>
+            <i class="fa fa-sign-in"></i> Login
+          </uib-tab-heading>
+          
+          <!-- Login form -->
+          <div ng-show="!lmc.showForgot">
+            <h1><i class="fa fa-sign-in"></i> Login</h1>
+            
+            <div ng-if="lmc.loginAlert.message" ng-class="lmc.loginAlert.type">{{lmc.loginAlert.message}}</div>
+            
+            <form class="well" ng-submit="lmc.login(email, password)">
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" class="form-control" ng-model="email">
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" class="form-control" ng-model="password">
+              </div>
+              
+              <button class="btn btn-warning btn-lg">Login</button>
+              &nbsp;<a href="#" ng-click="lmc.showForgot = true">Forgot password?</a>
+            </form>
+          </div>
+          
+          <!-- Forgot password form -->
+          <div ng-show="lmc.showForgot">
+            <div style="padding-top:10px">
+              <a href="#" ng-click="lmc.showForgot = false">< Back</a>
+            </div>
+            
+            <h1>Reset Password</h1>
+            
+            <div ng-if="lmc.forgotAlert.message" ng-class="lmc.forgotAlert.type">{{lmc.forgotAlert.message}}</div>
+            
+            <form class="well" ng-submit="lmc.forgot(email)">
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" class="form-control" ng-model="email">
+              </div>
+              
+              <button class="btn btn-warning btn-lg">Submit</button>
+            </form>
+          </div>
+        </uib-tab>
+
+        <!-- Register tab and content -->
+        <uib-tab>
+          <uib-tab-heading>
+            <i class="fa fa-sign-in"></i> Sign Up
+          </uib-tab-heading>
+          
+          <h1><i class="fa fa-sign-in"></i> Sign Up</h1>
+            
+          <div ng-if="lmc.registerError" class="bg-danger">{{lmc.registerError}}</div>
+          
+          <form class="well" ng-submit="lmc.register(email, password)">
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" name="email" class="form-control" ng-model="email">
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" name="password" class="form-control" ng-model="password">
+            </div>
+            
+            <button class="btn btn-warning btn-lg">Sign up</button>
+          </form>
+        </uib-tab>
+
+      </uib-tabset>
+
+    </div>
+  </div>
+</div>
