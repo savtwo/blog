@@ -6,6 +6,8 @@ html {
 body {
   margin-top: 65px;
   margin-bottom: 75px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
 }
 
 footer {
@@ -18,4 +20,36 @@ footer {
 
 footer > .container > div {
   margin: 20px 0px;
+}
+
+/* Index page */
+#middle {
+  text-align: center;
+}
+
+#leftIntro {
+  width: 60%;
+  float: left;
+}
+
+#rightIntro {
+  width: 40%;
+  float: left;
+}
+
+#picture {
+  border-radius: 20px;
+}
+
+#contactInfo {
+  font-size: 36px;
+}
+
+.fa {
+  color: #424242;
+}
+
+.fa:hover {
+  color: gray;
+  cursor: pointer;
 }

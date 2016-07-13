@@ -15,7 +15,7 @@ var app = express();
 /**
  * Database configuration
  */
-mongoose.connect(process.env.DB_CONNECTION);s
+mongoose.connect(process.env.DB_CONNECTION);
 
 /**
  * Express configuration
