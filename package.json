@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./app.js",
-    "test": "mocha ./tests/**/*.js -w",
-    "postinstall": "bower install && gulp dev-build"
+    "postinstall": "bower install"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
