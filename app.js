@@ -41,7 +41,7 @@ app.use("/api/v0", api.v0);
  */
 app.get("*", function(req, res) {
   var options = {
-    root: __dirname + "/public/dist"
+    root: __dirname + "/public"
   };
   
   res.sendFile("index.html", options);
