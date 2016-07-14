@@ -19,11 +19,11 @@ app.use(express.static(path.join(__dirname, "public")));
  * GET /
  */
 app.get("/", function(req, res) {
-  var options = {
-    root: __dirname + "/public"
-  };
+  // var options = {
+  //   root: __dirname + "/public"
+  // };
   
-  res.sendFile("index.html", options);
+  res.sendFile("index.html");
 });
 
 app.listen(process.env.PORT || 4000);
