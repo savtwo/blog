@@ -24,19 +24,14 @@ footer > .container > div {
   margin: 20px 0px;
 }
 
-/* Index page */
 #middle {
   text-align: center;
 }
 
-#leftIntro {
-  width: 50%;
-}
-
-#rightIntro {
-  width: 50%;
-  position: relative;
-  min-height: 503px;
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 
 #picture {
@@ -45,13 +40,10 @@ footer > .container > div {
 
 #contactInfo {
   font-size: 36px;
-  position: absolute;
-  bottom: 0;
-  width: 95%;
 }
 
 .fa {
-  color: #424242;
+  color: gray;
 }
 
 .fa:hover {
