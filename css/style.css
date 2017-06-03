@@ -24,21 +24,21 @@ footer > .container > div {
   margin: 20px 0px;
 }
 
-#middle {
+.container > .row {
   text-align: center;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
 }
 
-#picture {
+img {
   border-radius: 40px;
 }
 
-#contactInfo {
+.contactInfo {
   font-size: 36px;
 }
 
