@@ -6,7 +6,7 @@ html {
 body {
   margin-top: 65px;
   margin-bottom: 75px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif; 
   font-weight: 300;
   opacity: 0.8;
 }
@@ -30,23 +30,15 @@ footer > .container > div {
 
 img {
   max-width: 100%;
-  height: auto;
-  width: auto\9; /* ie8 */
-}
-
-img {
   border-radius: 40px;
+  height: auto;
+  width: auto;
 }
 
-.contactInfo {
+.contact-info {
   font-size: 36px;
 }
 
 .fa {
   color: gray;
-}
-
-.fa:hover {
-  color: gray;
-  cursor: pointer;
 }
