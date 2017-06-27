@@ -39,6 +39,10 @@ img {
   font-size: 36px;
 }
 
+.contact-info > a > .fa:hover {
+    color: #000;
+}
+
 .fa {
   color: gray;
 }
