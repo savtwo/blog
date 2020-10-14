@@ -9,6 +9,7 @@ $(document).ready(function() {
     let date = new Date();
     let year = date.getFullYear();
 
+    console.log('year', year);
     document.getElementById('getYear').innerHTML = year;
   }
 });
